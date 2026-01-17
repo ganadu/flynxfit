@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training Plan Generator - FlynxFit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">FlynxFit</div>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="register.html">Enregistrement</a></li>
+          <li><a href="profile.html">Profil</a></li>
+          <li><a href="generator.html">Plan Generator</a></li>
+          <li><a href="calendar.html">Calendrier</a></li>
+          <li><a href="dashboard.html">Tableau de bord</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="generator">
+        <h1>Générez votre plan d’entraînement</h1>
+        <p>
+          En fonction de votre profil, nous créerons une formation personnalisée
+          de 4 semaines plan.
+        </p>
+        <button id="generateBtn" class="cta-button">Générer un plan</button>
+        <button id="deleteBtn" class="cta-button" style="display: none">
+          Supprimer le plan
+        </button>
+        <div id="planDisplay" class="plan-display"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 FlynxFit. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

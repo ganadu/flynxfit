@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau de bord de progression - FlynxFit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">FlynxFit</div>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="register.html">Enregistrement</a></li>
+          <li><a href="profile.html">Profil</a></li>
+          <li><a href="generator.html">Plan Generator</a></li>
+          <li><a href="calendar.html">Calendrier</a></li>
+          <li><a href="dashboard.html">Tableau de bord</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="dashboard">
+        <h1>Votre tableau de bord de progression</h1>
+        <div class="progress-grid">
+          <div class="progress-item">
+            <h3>Progrès du plan de formation</h3>
+            <div class="progress-bar">
+              <div
+                class="progress-fill"
+                id="planProgress"
+                style="width: 0%"
+              ></div>
+            </div>
+            <p id="planProgressText">0% du plan complété</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 FlynxFit. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

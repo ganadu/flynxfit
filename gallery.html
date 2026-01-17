@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie d’exercice - FlynxFit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">FlynxFit</div>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="register.html">Enregistrement</a></li>
+          <li><a href="profile.html">Profil</a></li>
+          <li><a href="generator.html">Plan Generator</a></li>
+          <li><a href="calendar.html">Calendrier</a></li>
+          <li><a href="dashboard.html">Tableau de bord</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="gallery">
+        <h1>Galerie d’exercice</h1>
+        <div class="category-tabs">
+          <button class="tab-btn active" data-category="chest">Poitrine</button>
+          <button class="tab-btn" data-category="back">Dos</button>
+          <button class="tab-btn" data-category="legs">Jambes</button>
+          <button class="tab-btn" data-category="shoulders">Épaules</button>
+          <button class="tab-btn" data-category="arms">Bras</button>
+          <button class="tab-btn" data-category="core">Tronc</button>
+        </div>
+        <div class="exercise-grid" id="exerciseGrid">
+          <!-- Exercises will be loaded here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 FlynxFit. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calendrier d'entraînement - FlynxFit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">FlynxFit</div>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="register.html">Enregistrement</a></li>
+          <li><a href="profile.html">Profil</a></li>
+          <li><a href="generator.html">Plan Generator</a></li>
+          <li><a href="calendar.html">Calendrier</a></li>
+          <li><a href="dashboard.html">Tableau de bord</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="calendar-section">
+        <h1>Votre calendrier d'entraînement</h1>
+        <div class="calendar-controls">
+          <button id="prevMonth"><</button>
+          <h2 id="monthYear"></h2>
+          <button id="nextMonth">></button>
+        </div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+        <div id="workoutModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modalDate"></h3>
+            <div id="workoutList"></div>
+            <button id="addWorkoutBtn">Ajouter un entraînement</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 FlynxFit. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
